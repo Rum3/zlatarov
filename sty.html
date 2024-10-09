@@ -1,0 +1,152 @@
+<style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background-color: black;
+    }
+    
+    html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.album-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover; 
+}
+.desc {
+    width: 100%;
+    margin: 40px;
+    color: bisque;
+    /* display: block; */
+}
+
+footer {
+    background-color: rgb(254, 235, 214);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+    </style>
+    
+    <body>
+        <div class="header">
+            <img src="imgs/logo.png" alt="Logo">
+            <div class="dropdown">
+            <button class="dropbtn">&#9776;</button>
+                <div class="dropdown-content">
+                    <a href="#option1">За нас</a>
+                    <a href="#products">Продукти</a>
+                    <a href="#contact">Поръчай</a>
+                </div>
+            </div> 
+        </div>
+            <div class="content">
+                <video class="fullscreen-video" autoplay muted loop>
+                    <source src="imgs/CANDLE.mp4" type="video/mp4">
+                    Вашият браузър не поддържа HTML5 видео.
+                </video>
+            </div>
+            <section id="products">
+                <div class="content">
+                    <div class="album">
+                        <img src="../imgs/svesht-yuletide-910x1155.jpg" alt="Image 1" class="album-image">
+                        <p class="desc">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. </p>
+                    </div>
+                    <div class="album">
+                        <img src="../imgs/svesht-yuletide-910x1155.jpg" alt="Image 1" class="album-image">
+                        <p class="desc">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. </p>
+                    </div>
+                    <div class="album">
+                        <img src="../imgs/svesht-yuletide-910x1155.jpg" alt="Image 1" class="album-image">
+                        <p class="desc">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. </p>
+                    </div>
+                    <div class="album">
+                        <img src="../imgs/svesht-yuletide-910x1155.jpg" alt="Image 1" class="album-image">
+                        <p class="desc">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h1 class="heading"> СВЪРЖЕТЕ СЕ С НАС</h1>
+                <div class="row">
+                    <form action="https://formsubmit.co/rum3n1992@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://rum3.github.io/CATERING/">
+                    <div class="inputBox">
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Enter name"
+                        required
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email"
+                        required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ИЗПРАТИ</button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                  <p>&copy; 2024 ВашеНазвание. Все права защищены.</p>
+                  <ul>
+                    <li><a>О нас</a></li>
+                    <li><a>Контакты</a></li>
+                    <li><a>Политика конфиденциальности</a></li>
+                  </ul>
+                </div>
+              </footer>
+    </body>
